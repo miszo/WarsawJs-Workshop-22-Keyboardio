@@ -1,0 +1,14 @@
+{
+    "asdf letters": {
+        "charset": "asdf",
+        "spaces": 5
+    },
+    "+jkl;": {
+        "charset": "asdfjkl;",
+        "spaces": 4
+    },
+    "erui": {
+        "charset": "asdfjkl;erui",
+        "spaces": 4
+    }
+}

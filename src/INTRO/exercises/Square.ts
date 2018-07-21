@@ -1,0 +1,1 @@
+/* Your Square() definition */

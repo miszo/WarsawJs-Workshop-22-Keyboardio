@@ -1,0 +1,20 @@
+---------------------
+[0] load                        <--- main menu
+[1] exit
+> 0                             <--- user selection
+---------------------
+[0] asdf letters                <--- lessons list (titles)
+[1] +qwer
+[2] erty only
+> 1
+  qwer rere reqw rerq           <--- lesson (random chars from charset)
+> qwer rererreqq rerq           <--- user input
+Mistakes: 2                     <--- lesson validation
+---------------------
+[0] load                        <--- main menu again
+[1] exit
+> 2
+
+
+
+
