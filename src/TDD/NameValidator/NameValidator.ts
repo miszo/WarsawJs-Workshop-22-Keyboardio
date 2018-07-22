@@ -1,12 +1,9 @@
 export function NameValidator(name)
 {
-    if (!name
+    return !(!name
       || typeof name !== 'string'
       || name.trim() === ''
       || name.trim() !== name
-      || name.split(' ').length > 2
-    ) {
-        return false;
-    }
-    return true;
+      || name.split(' ').length > 2);
+
 }
