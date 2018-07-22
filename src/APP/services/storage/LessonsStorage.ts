@@ -1,12 +1,10 @@
-import * as fs from 'fs';
-
 export class LessonsStorage
 {
     private lessons = [];
 
-    constructor()
+    constructor(_fileReader)
     {
-        const lessonsAsString = fs.readFileSync('./src/APP/services/storage/lessons.json', 'utf-8');
+        const lessonsAsString = _fileReader.readFileSync('./src/APP/services/storage/lessons.json', 'utf-8');
         this.lessons = JSON.parse(lessonsAsString);
     }
     
@@ -17,6 +15,8 @@ export class LessonsStorage
 
     GetByTitle(title)
     {
+        if (!this.lessons[title]) throw new Error();
+
         return this.lessons[title];
     }
 }

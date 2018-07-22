@@ -1,8 +1,15 @@
 import { RandomChar } from "./RandomChar";
 
-test.skip('impossible to test', () =>
+test('should return first letter from charset for input 0', () =>
 {
-    let result = RandomChar();
+    let result = RandomChar(0);
 
-    expect(result).toBe("???");
-}); 
+    expect(result).toBe("a");
+});
+
+test('should return middle letter from charset for input 0.5', () =>
+{
+  let result = RandomChar(0.5);
+
+  expect(result).toBe("c");
+});

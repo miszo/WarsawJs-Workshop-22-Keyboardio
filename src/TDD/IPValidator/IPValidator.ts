@@ -1,16 +1,8 @@
-/*
-    Example of valid IP:
-
-        "123.123.123.123"
-
-    Example of invalid IP:
-
-        "0.-1.555"
-*/
-
-function IPValidator(ip: string): boolean
+export function IPValidator(ip: string): boolean
 {
+    const regex = /\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/;
 
-    
+    if (ip.match(regex)) return true;
+
     return false;
 }

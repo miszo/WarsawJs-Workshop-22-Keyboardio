@@ -1,7 +1,7 @@
-export function RandomChar()
+export function RandomChar(random)
 {
     const charset = ['a','b','c','d','e'];
-    const random = Math.floor(Math.random() * (charset.length-1));
+    const radom = Math.floor(random * (charset.length-1));
 
-    return charset[random];
+    return charset[radom];
 }

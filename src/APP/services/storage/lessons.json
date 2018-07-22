@@ -10,5 +10,9 @@
     "erui": {
         "charset": "asdfjkl;erui",
         "spaces": 4
+    },
+    "yolo": {
+        "charset": "yolo",
+        "spaces": 4
     }
 }
